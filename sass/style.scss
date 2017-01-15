@@ -1,0 +1,90 @@
+// COLORS
+$color-main: #ff6262;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-darkgrey: #3C300B;
+$color-grey: #c2c2c2;
+$color-lightgrey: #e2e2e2;
+$transparency: rgba(255, 255, 255, 0.7);
+
+// SIZES
+$default-jump: 40px;
+
+// FONTS
+$sans-serif: 'Roboto', sans-serif;
+$serif: 'Merriweather', serif;
+
+
+body {
+    font-family: $sans-serif;
+}
+
+header {
+    background-color: $transparency;
+    color: $color-main;
+    padding: 20px 0px 20px 0px;
+    position: absolute;
+    width: 100%;
+}
+
+#frontpage {
+    .causa-principal {
+        background-color: $color-main;
+        color: $color-white;
+        padding: $default-jump*5 0px $default-jump 0px;
+        .causa-pretitulo {
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        .causa-titulo {
+            font-family: $serif;
+            font-size: 100px;
+            font-weight: bold;
+        }
+        .btn-poletika {
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: $color-main;
+            padding: 15px 25px 15px 25px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    .causas {
+        padding: $default-jump 0px $default-jump 0px;
+        .causa {
+            padding-bottom: 60px;
+            .tematica {
+                font-size: 18px;
+                color: $color-main;
+            } 
+           .titulo {
+                font-family: $serif;
+                font-size: 24px;
+                margin-top: 10px;
+                margin-top: 20px;
+
+           }
+           img {
+               padding-bottom: 26px;
+           }
+           .what {
+               color: $color-darkgrey;
+               font-size: 12px;
+                text-transform: uppercase;
+           }
+        }
+    }
+}
+
+#prefooter {
+    background-color: $color-black;
+    color: $color-white;
+    height: 200px;
+    border-bottom: 2px dashed $color-white;
+}
+footer {
+    background-color: $color-black;
+    color: $color-white;
+    height: 200px;
+}
