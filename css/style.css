@@ -7,11 +7,57 @@ header {
   padding: 20px 0px 20px 0px;
   position: absolute;
   width: 100%; }
+  header h1 {
+    letter-spacing: 5px; }
+
+#prefooter {
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 2px dashed #ffffff;
+  text-transform: uppercase;
+  padding: 40px 0px 40px 0px; }
+  #prefooter h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 5px; }
+  #prefooter h5 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  #prefooter li {
+    padding-bottom: 20px; }
+  #prefooter a {
+    font-size: 14px;
+    color: #ffffff; }
+    #prefooter a:hover {
+      color: #ffffff; }
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0px 40px 0px; }
+  footer h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  footer p {
+    font-size: 13px; }
+  footer p.small {
+    font-size: 10px; }
+  footer ul {
+    padding-top: 20px; }
+  footer a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff; }
+    footer a:hover {
+      color: #ffffff; }
+
+.wrapper {
+  padding: 200px 0px 120px 0px; }
 
 #frontpage .causa-principal {
   background-color: #ff6262;
-  color: #ffffff;
-  padding: 200px 0px 40px 0px; }
+  color: #ffffff; }
   #frontpage .causa-principal .causa-pretitulo {
     font-size: 36px;
     text-transform: uppercase; }
@@ -46,13 +92,63 @@ header {
       font-size: 12px;
       text-transform: uppercase; }
 
-#prefooter {
-  background-color: #000000;
-  color: #ffffff;
-  height: 200px;
-  border-bottom: 2px dashed #ffffff; }
+#tematica .main {
+  background-color: #350202;
+  color: #ffffff; }
+  #tematica .main .tematica-titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    padding-top: 144px; }
+  #tematica .main .tematica-descripcion {
+    font-size: 18px;
+    padding-bottom: 100px;
+    font-weight: 300; }
 
-footer {
-  background-color: #000000;
+#tematica .causas h5 {
+  color: #ff6262;
+  font-size: 36px;
+  padding: 40px 0px 40px 0px; }
+
+#tematica .causas .causa-block .causa-info {
+  background-color: rgba(53, 2, 2, 0.05); }
+  #tematica .causas .causa-block .causa-info h3 {
+    font-size: 38px;
+    font-family: "Merriweather", serif; }
+  #tematica .causas .causa-block .causa-info a.readmore {
+    color: #636363;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+#tematica .causas .causa-block .causa-meta {
+  background-color: #ffffff;
+  color: #ff6262;
+  font-size: 24px;
+  padding: 40px 0px 40px 0px; }
+
+#tematica .acciones {
+  background-color: #ff6262;
   color: #ffffff;
-  height: 200px; }
+  padding: 40px 0px 40px 0px;
+  font-size: 24px; }
+  #tematica .acciones .accion {
+    padding: 0px 20px 0px 20px; }
+
+#tematica .contenido {
+  background-color: rgba(53, 2, 2, 0.05);
+  padding: 80px 0px 80px 0px; }
+
+#page.basica {
+  background-color: rgba(53, 2, 2, 0.05); }
+  #page.basica h1 {
+    font-size: 72px;
+    font-weight: bold; }
+  #page.basica h3 {
+    font-size: 36px;
+    font-weight: bold; }
+  #page.basica p {
+    font-size: 18px;
+    padding-bottom: 20px; }
+  #page.basica p:first-of-type {
+    padding-top: 40px; }
