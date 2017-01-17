@@ -2,11 +2,12 @@ body {
   font-family: "Roboto", sans-serif; }
 
 header {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   color: #ff6262;
   padding: 20px 0px 20px 0px;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
   header h1 {
     letter-spacing: 5px; }
 
@@ -52,8 +53,8 @@ footer {
     footer a:hover {
       color: #ffffff; }
 
-.wrapper {
-  padding: 200px 0px 120px 0px; }
+.wrapper .main {
+  padding: 160px 0px 80px 0px; }
 
 #frontpage .causa-principal {
   background-color: #ff6262;
@@ -92,51 +93,84 @@ footer {
       font-size: 12px;
       text-transform: uppercase; }
 
-#tematica .main {
-  background-color: #350202;
-  color: #ffffff; }
-  #tematica .main .tematica-titulo {
-    font-family: "Roboto", sans-serif;
-    font-size: 100px;
-    font-weight: bold;
-    padding-top: 144px; }
-  #tematica .main .tematica-descripcion {
-    font-size: 18px;
-    padding-bottom: 100px;
-    font-weight: 300; }
-
-#tematica .causas h5 {
-  color: #ff6262;
-  font-size: 36px;
-  padding: 40px 0px 40px 0px; }
-
-#tematica .causas .causa-block .causa-info {
+#tematica {
   background-color: rgba(53, 2, 2, 0.05); }
-  #tematica .causas .causa-block .causa-info h3 {
-    font-size: 38px;
-    font-family: "Merriweather", serif; }
-  #tematica .causas .causa-block .causa-info a.readmore {
-    color: #636363;
+  #tematica .main {
+    background-color: #350202;
+    color: #ffffff; }
+    #tematica .main .titulo {
+      font-family: "Roboto", sans-serif;
+      font-size: 100px;
+      font-weight: bold;
+      padding-top: 40px; }
+    #tematica .main .descripcion {
+      font-size: 18px;
+      padding-bottom: 40px;
+      font-weight: 300; }
+  #tematica .causas h5 {
+    color: #ff6262;
+    font-size: 36px;
+    padding: 40px 0px 40px 0px; }
+  #tematica .causas .causa .info {
+    background-color: rgba(53, 2, 2, 0.05); }
+    #tematica .causas .causa .info h3 {
+      font-size: 38px;
+      font-family: "Merriweather", serif; }
+    #tematica .causas .causa .info a.readmore {
+      color: #636363;
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+  #tematica .causas .causa .metricas {
+    background-color: #ffffff;
+    color: #ff6262;
+    font-size: 24px;
+    padding: 40px 0px 40px 0px; }
+
+#causa {
+  background-color: rgba(53, 2, 2, 0.05); }
+  #causa .main .tematicas {
+    position: absolute;
+    margin-top: 109px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
     text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    background-color: #350202;
+    color: #ffffff;
+    z-index: 100; }
+  #causa .organizaciones {
+    color: #ff6262;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 0px 20px 0px; }
+  #causa .info .titulo {
+    font-family: "Merriweather", serif;
+    font-size: 64px; }
+  #causa .metricas {
+    color: #ff6262;
+    font-size: 24px;
+    padding: 40px 0px 40px 0px; }
+  #causa .meta {
+    padding: 40px 0px 40px 0px; }
+    #causa .meta .descripcion p {
+      font-size: 24px;
+      color: #350202; }
+    #causa .meta .fotos {
+      /*code*/ }
+  #causa .timeline {
+    background-color: #ffffff;
+    color: #ff6262;
+    height: 200px; }
 
-#tematica .causas .causa-block .causa-meta {
-  background-color: #ffffff;
-  color: #ff6262;
-  font-size: 24px;
-  padding: 40px 0px 40px 0px; }
-
-#tematica .acciones {
+#tematica .acciones, #causa .acciones {
   background-color: #ff6262;
   color: #ffffff;
   padding: 40px 0px 40px 0px;
   font-size: 24px; }
-  #tematica .acciones .accion {
+  #tematica .acciones .accion, #causa .acciones .accion {
     padding: 0px 20px 0px 20px; }
 
-#tematica .contenido {
-  background-color: rgba(53, 2, 2, 0.05);
+#tematica .contenido, #causa .contenido {
   padding: 80px 0px 80px 0px; }
 
 #page.basica {
@@ -152,3 +186,33 @@ footer {
     padding-bottom: 20px; }
   #page.basica p:first-of-type {
     padding-top: 40px; }
+
+#quienes-somos h3 {
+  font-size: 72px;
+  font-weight: bold; }
+
+#quienes-somos p, #quienes-somos ul li {
+  font-size: 18px;
+  font-weight: 300; }
+
+#quienes-somos .block {
+  padding: 40px 0px 40px 0px; }
+
+#quienes-somos .somos, #quienes-somos .tu {
+  background-color: #ff6262;
+  color: #ffffff; }
+
+#quienes-somos .pedimos, #quienes-somos .vigilamos-a, #quienes-somos .metodologias, #quienes-somos .contacto {
+  background-color: #ffffff;
+  color: #000000; }
+  #quienes-somos .pedimos ul, #quienes-somos .vigilamos-a ul, #quienes-somos .metodologias ul, #quienes-somos .contacto ul {
+    padding-left: 40px; }
+    #quienes-somos .pedimos ul li, #quienes-somos .vigilamos-a ul li, #quienes-somos .metodologias ul li, #quienes-somos .contacto ul li {
+      padding: 20px 0px 20px 0px; }
+
+#quienes-somos .vigilamos, #quienes-somos .datos {
+  background-color: rgba(53, 2, 2, 0.05);
+  color: #ff6262; }
+  #quienes-somos .vigilamos a, #quienes-somos .datos a {
+    color: #ff6262;
+    font-weight: bold; }

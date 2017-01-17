@@ -1,5 +1,5 @@
 // COLORS
-$color-main: #ff6262;
+$color-primary: #ff6262;
 $color-black: #000000;
 $color-brown: #350202;
 $color-white: #ffffff;
@@ -7,7 +7,7 @@ $color-darkgrey: #3C300B;
 $color-darkgrey-alt: #636363;
 $color-grey: #c2c2c2;
 $color-lightgrey: #e2e2e2;
-$transparency: rgba(255, 255, 255, 0.7);
+$transparency: rgba(255, 255, 255, 0.75);
 $color-grey-bg: rgba(53, 2, 2, 0.05);
 
 // SIZES
@@ -26,10 +26,11 @@ body {
 
 header {
     background-color: $transparency;
-    color: $color-main;
+    color: $color-primary;
     padding: 20px 0px 20px 0px;
     position: absolute;
     width: 100%;
+    z-index: 99;
     h1 {
         letter-spacing: 5px;
     }
@@ -89,16 +90,18 @@ footer {
     }
 }
 
-.wrapper {
-    padding: $default-jump*5 0px $default-jump*3 0px;
-}
 
+.wrapper {
+    .main {
+        padding: $default-jump*4 0px $default-jump*2 0px;
+    }
+}
 
 // PAGES
 
 #frontpage {
     .causa-principal {
-        background-color: $color-main;
+        background-color: $color-primary;
         color: $color-white;
         .causa-pretitulo {
             font-size: 36px;
@@ -112,7 +115,7 @@ footer {
         .btn-poletika {
             border-radius: 100px;
             background-color: rgba(255, 255, 255, 0.9);
-            color: $color-main;
+            color: $color-primary;
             padding: 15px 25px 15px 25px;
             font-size: 18px;
             text-transform: uppercase;
@@ -124,7 +127,7 @@ footer {
             padding-bottom: 60px;
             .tematica {
                 font-size: 18px;
-                color: $color-main;
+                color: $color-primary;
             } 
            .titulo {
                 font-family: $serif;
@@ -146,29 +149,30 @@ footer {
 }
 
 #tematica {
+    background-color: $color-grey-bg;
     .main {
         background-color: $color-brown;
         color: $color-white;
-        .tematica-titulo {
+        .titulo {
             font-family: $sans-serif;
             font-size: 100px;
             font-weight: bold;
-            padding-top: 144px;
+            padding-top: $default-jump;
         }
-        .tematica-descripcion {
+        .descripcion {
             font-size: 18px;
-            padding-bottom: 100px;
+            padding-bottom: $default-jump;
             font-weight: 300;
         }
     }
     .causas {
         h5 {
-            color: $color-main;
+            color: $color-primary;
             font-size: 36px;
             padding: $default-jump 0px $default-jump 0px;
         }
-        .causa-block {
-            .causa-info {
+        .causa {
+            .info {
                 background-color: $color-grey-bg;
                 h3 {
                     font-size: 38px;
@@ -181,16 +185,71 @@ footer {
                     padding-bottom: 20px;
                 }
             }
-            .causa-meta {
+            .metricas {
                 background-color: $color-white;
-                color: $color-main;
+                color: $color-primary;
                 font-size: 24px;
                 padding: $default-jump 0px $default-jump 0px;
             }
         }
     }
+}
+
+
+#causa {
+    background-color: $color-grey-bg;
+    .main {
+        .tematicas {
+            position: absolute;
+            margin-top: 109px;
+            width: 100%;
+            padding: 20px 0px 20px 0px;
+            text-transform: uppercase;
+            background-color: $color-brown;
+            color: $color-white;
+            z-index: 100;
+        }
+    }
+    .organizaciones {
+        color: $color-primary;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: $default-jump/2 0px $default-jump/2 0px;
+    }
+    .info {
+        .titulo {
+            font-family: $serif;
+            font-size: 64px;
+        }
+    }
+    .metricas {
+        color: $color-primary;
+        font-size: 24px;
+        padding: $default-jump 0px $default-jump 0px;
+    }
+    .meta {
+        padding: $default-jump 0px $default-jump 0px;
+        .descripcion {
+            p {
+                font-size: 24px;
+                color: $color-brown;
+            }
+        }
+        .fotos {
+            /*code*/
+        }
+    }
+    .timeline {
+        background-color: $color-white;
+        color: $color-primary;
+        height: 200px;
+    }
+}
+
+
+#tematica, #causa {
     .acciones {
-        background-color: $color-main;
+        background-color: $color-primary;
         color: $color-white;
         padding: $default-jump 0px $default-jump 0px;
         font-size: 24px;
@@ -199,10 +258,10 @@ footer {
         }
     }
     .contenido {
-        background-color: $color-grey-bg;
         padding: $default-jump*2 0px $default-jump*2 0px;
     }
 }
+
 
 #page.basica {
     background-color: $color-grey-bg;
@@ -220,5 +279,42 @@ footer {
     }
     p:first-of-type {
         padding-top: 40px;
+    }
+}
+
+
+#quienes-somos {
+    h3 {
+        font-size: 72px;
+        font-weight: bold;
+    }
+    p, ul li {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .block {
+        padding: $default-jump 0px $default-jump 0px;
+    }
+    .somos, .tu {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+    .pedimos, .vigilamos-a, .metodologias, .contacto {
+        background-color: $color-white;
+        color: $color-black;
+        ul {
+            padding-left: 40px;
+            li {
+                padding: 20px 0px 20px 0px;
+            }
+        }
+    }
+    .vigilamos, .datos {
+        background-color: $color-grey-bg;
+        color: $color-primary;
+        a {
+            color: $color-primary;
+            font-weight: bold;
+        }
     }
 }
