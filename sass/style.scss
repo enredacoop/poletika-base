@@ -17,6 +17,14 @@ $default-jump: 40px;
 $sans-serif: 'Roboto', sans-serif;
 $serif: 'Merriweather', serif;
 
+// FONT SIZES
+$fontsize-xbig: 72px;
+$fontsize-big: 48px;
+$fontsize-medium: 24px;
+$fontsize-small: 16px;
+$fontsize-xsmall: 14px;
+$fontsize-xxsmall: 10px;
+
 
 // COMMON
 
@@ -46,9 +54,10 @@ header {
         margin-top: 0px;
         margin-bottom: 0px;
         letter-spacing: 5px;
+        font-size: $fontsize-big;
     }
     h5 {
-        font-size: 16px;
+        font-size: $fontsize-small;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -56,7 +65,7 @@ header {
         padding-bottom: 20px;
     }
     a {
-        font-size: 14px;
+        font-size: $fontsize-xsmall;
         color: $color-white;
         &:hover {
             color: $color-white;
@@ -70,23 +79,27 @@ footer {
     h2 {
         text-transform: uppercase;
         letter-spacing: 5px;
+        font-size: $fontsize-medium;
     }
     p {
-        font-size: 13px;
+        font-size: $fontsize-xsmall;
     }
     p.small {
-        font-size: 10px;
+        font-size: $fontsize-xxsmall;
     }
     ul {
         padding-top: 20px;
     }
     a {
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $fontsize-xsmall;
         color: $color-white;
         &:hover {
             color: $color-white;
         }
+    }
+    .col-sm-3 {
+        padding-top: $default-jump;
     }
 }
 
@@ -104,12 +117,12 @@ footer {
         background-color: $color-primary;
         color: $color-white;
         .causa-pretitulo {
-            font-size: 36px;
+            font-size: $fontsize-small;
             text-transform: uppercase;
         }
         .causa-titulo {
             font-family: $serif;
-            font-size: 100px;
+            font-size: $fontsize-big;
             font-weight: bold;
         }
         .btn-poletika {
@@ -117,7 +130,7 @@ footer {
             background-color: rgba(255, 255, 255, 0.9);
             color: $color-primary;
             padding: 15px 25px 15px 25px;
-            font-size: 18px;
+            font-size: $fontsize-small;
             text-transform: uppercase;
         }
     }
@@ -126,12 +139,12 @@ footer {
         .causa {
             padding-bottom: 60px;
             .tematica {
-                font-size: 18px;
+                font-size: $fontsize-small;
                 color: $color-primary;
             } 
            .titulo {
                 font-family: $serif;
-                font-size: 24px;
+                font-size: $fontsize-medium;
                 margin-top: 10px;
                 margin-top: 20px;
 
@@ -141,7 +154,7 @@ footer {
            }
            .what {
                color: $color-darkgrey;
-               font-size: 12px;
+               font-size: $fontsize-xsmall;
                 text-transform: uppercase;
            }
         }
@@ -155,12 +168,12 @@ footer {
         color: $color-white;
         .titulo {
             font-family: $sans-serif;
-            font-size: 100px;
+            font-size: $fontsize-big;
             font-weight: bold;
             padding-top: $default-jump;
         }
         .descripcion {
-            font-size: 18px;
+            font-size: $fontsize-small;
             padding-bottom: $default-jump;
             font-weight: 300;
         }
@@ -168,14 +181,14 @@ footer {
     .causas {
         h5 {
             color: $color-primary;
-            font-size: 36px;
+            font-size: $fontsize-medium;
             padding: $default-jump 0px $default-jump 0px;
         }
         .causa {
             .info {
                 background-color: $color-grey-bg;
                 h3 {
-                    font-size: 38px;
+                    font-size: $fontsize-medium;
                     font-family: $serif;
                 }
                 a.readmore {
@@ -188,7 +201,7 @@ footer {
             .metricas {
                 background-color: $color-white;
                 color: $color-primary;
-                font-size: 24px;
+                font-size: $fontsize-small;
                 padding: $default-jump 0px $default-jump 0px;
             }
         }
@@ -213,25 +226,25 @@ footer {
     .organizaciones {
         color: $color-primary;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: $fontsize-xsmall;
         padding: $default-jump/2 0px $default-jump/2 0px;
     }
     .info {
         .titulo {
             font-family: $serif;
-            font-size: 64px;
+            font-size: $fontsize-big;
         }
     }
     .metricas {
         color: $color-primary;
-        font-size: 24px;
+        font-size: $fontsize-small;
         padding: $default-jump 0px $default-jump 0px;
     }
     .meta {
         padding: $default-jump 0px $default-jump 0px;
         .descripcion {
             p {
-                font-size: 24px;
+                font-size: $fontsize-small;
                 color: $color-brown;
             }
         }
@@ -252,7 +265,7 @@ footer {
         background-color: $color-primary;
         color: $color-white;
         padding: $default-jump 0px $default-jump 0px;
-        font-size: 24px;
+        font-size: $fontsize-small;
         .accion {
             padding: 0px 20px 0px 20px;
         }
@@ -266,15 +279,15 @@ footer {
 #page.basica {
     background-color: $color-grey-bg;
     h1 {
-        font-size: 72px;
+        font-size: $fontsize-big;
         font-weight: bold;
     }
     h3 {
-        font-size: 36px;
+        font-size: $fontsize-medium;
         font-weight: bold;
     }
     p {
-        font-size: 18px;
+        font-size: $fontsize-small;
         padding-bottom: 20px;
     }
     p:first-of-type {
@@ -285,11 +298,11 @@ footer {
 
 #quienes-somos {
     h3 {
-        font-size: 72px;
+        font-size: $fontsize-big;
         font-weight: bold;
     }
     p, ul li {
-        font-size: 18px;
+        font-size: $fontsize-small;
         font-weight: 300;
     }
     .block {

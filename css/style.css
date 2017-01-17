@@ -20,7 +20,8 @@ header {
   #prefooter h1 {
     margin-top: 0px;
     margin-bottom: 0px;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    font-size: 48px; }
   #prefooter h5 {
     font-size: 16px;
     margin-top: 0px;
@@ -39,9 +40,10 @@ footer {
   padding: 40px 0px 40px 0px; }
   footer h2 {
     text-transform: uppercase;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    font-size: 24px; }
   footer p {
-    font-size: 13px; }
+    font-size: 14px; }
   footer p.small {
     font-size: 10px; }
   footer ul {
@@ -52,6 +54,8 @@ footer {
     color: #ffffff; }
     footer a:hover {
       color: #ffffff; }
+  footer .col-sm-3 {
+    padding-top: 40px; }
 
 .wrapper .main {
   padding: 160px 0px 80px 0px; }
@@ -60,18 +64,18 @@ footer {
   background-color: #ff6262;
   color: #ffffff; }
   #frontpage .causa-principal .causa-pretitulo {
-    font-size: 36px;
+    font-size: 16px;
     text-transform: uppercase; }
   #frontpage .causa-principal .causa-titulo {
     font-family: "Merriweather", serif;
-    font-size: 100px;
+    font-size: 48px;
     font-weight: bold; }
   #frontpage .causa-principal .btn-poletika {
     border-radius: 100px;
     background-color: rgba(255, 255, 255, 0.9);
     color: #ff6262;
     padding: 15px 25px 15px 25px;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase; }
 
 #frontpage .causas {
@@ -79,7 +83,7 @@ footer {
   #frontpage .causas .causa {
     padding-bottom: 60px; }
     #frontpage .causas .causa .tematica {
-      font-size: 18px;
+      font-size: 16px;
       color: #ff6262; }
     #frontpage .causas .causa .titulo {
       font-family: "Merriweather", serif;
@@ -90,7 +94,7 @@ footer {
       padding-bottom: 26px; }
     #frontpage .causas .causa .what {
       color: #3C300B;
-      font-size: 12px;
+      font-size: 14px;
       text-transform: uppercase; }
 
 #tematica {
@@ -100,21 +104,21 @@ footer {
     color: #ffffff; }
     #tematica .main .titulo {
       font-family: "Roboto", sans-serif;
-      font-size: 100px;
+      font-size: 48px;
       font-weight: bold;
       padding-top: 40px; }
     #tematica .main .descripcion {
-      font-size: 18px;
+      font-size: 16px;
       padding-bottom: 40px;
       font-weight: 300; }
   #tematica .causas h5 {
     color: #ff6262;
-    font-size: 36px;
+    font-size: 24px;
     padding: 40px 0px 40px 0px; }
   #tematica .causas .causa .info {
     background-color: rgba(53, 2, 2, 0.05); }
     #tematica .causas .causa .info h3 {
-      font-size: 38px;
+      font-size: 24px;
       font-family: "Merriweather", serif; }
     #tematica .causas .causa .info a.readmore {
       color: #636363;
@@ -124,7 +128,7 @@ footer {
   #tematica .causas .causa .metricas {
     background-color: #ffffff;
     color: #ff6262;
-    font-size: 24px;
+    font-size: 16px;
     padding: 40px 0px 40px 0px; }
 
 #causa {
@@ -145,15 +149,15 @@ footer {
     padding: 20px 0px 20px 0px; }
   #causa .info .titulo {
     font-family: "Merriweather", serif;
-    font-size: 64px; }
+    font-size: 48px; }
   #causa .metricas {
     color: #ff6262;
-    font-size: 24px;
+    font-size: 16px;
     padding: 40px 0px 40px 0px; }
   #causa .meta {
     padding: 40px 0px 40px 0px; }
     #causa .meta .descripcion p {
-      font-size: 24px;
+      font-size: 16px;
       color: #350202; }
     #causa .meta .fotos {
       /*code*/ }
@@ -166,7 +170,7 @@ footer {
   background-color: #ff6262;
   color: #ffffff;
   padding: 40px 0px 40px 0px;
-  font-size: 24px; }
+  font-size: 16px; }
   #tematica .acciones .accion, #causa .acciones .accion {
     padding: 0px 20px 0px 20px; }
 
@@ -176,23 +180,23 @@ footer {
 #page.basica {
   background-color: rgba(53, 2, 2, 0.05); }
   #page.basica h1 {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: bold; }
   #page.basica h3 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold; }
   #page.basica p {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 20px; }
   #page.basica p:first-of-type {
     padding-top: 40px; }
 
 #quienes-somos h3 {
-  font-size: 72px;
+  font-size: 48px;
   font-weight: bold; }
 
 #quienes-somos p, #quienes-somos ul li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300; }
 
 #quienes-somos .block {
