@@ -255,7 +255,7 @@ footer {
     .timeline {
         background-color: $color-white;
         color: $color-primary;
-        height: 200px;
+        padding: $default-jump 0px $default-jump 0px;
     }
 }
 
@@ -307,22 +307,33 @@ footer {
     }
     .block {
         padding: $default-jump 0px $default-jump 0px;
+        .subblock {
+            padding: $default-jump 0px $default-jump 0px;
+        }
     }
-    .somos, .tu {
+    .somos, .vigilamos, .por-que {
         background-color: $color-primary;
         color: $color-white;
+        a {
+            color: $color-white;
+            font-weight: bold;
+        }
     }
-    .pedimos, .vigilamos-a, .metodologias, .contacto {
+    .hacemos, .vigilamos-a, .como-ser {
         background-color: $color-white;
         color: $color-black;
         ul {
             padding-left: 40px;
             li {
-                padding: 20px 0px 20px 0px;
+                padding: 5px 0px 5px 0px;
             }
         }
+        a {
+            color: $color-black;
+            font-weight: bold;
+        }
     }
-    .vigilamos, .datos {
+    .metodologias {
         background-color: $color-grey-bg;
         color: $color-primary;
         a {

@@ -164,7 +164,7 @@ footer {
   #causa .timeline {
     background-color: #ffffff;
     color: #ff6262;
-    height: 200px; }
+    padding: 40px 0px 40px 0px; }
 
 #tematica .acciones, #causa .acciones {
   background-color: #ff6262;
@@ -201,22 +201,30 @@ footer {
 
 #quienes-somos .block {
   padding: 40px 0px 40px 0px; }
+  #quienes-somos .block .subblock {
+    padding: 40px 0px 40px 0px; }
 
-#quienes-somos .somos, #quienes-somos .tu {
+#quienes-somos .somos, #quienes-somos .vigilamos, #quienes-somos .por-que {
   background-color: #ff6262;
   color: #ffffff; }
+  #quienes-somos .somos a, #quienes-somos .vigilamos a, #quienes-somos .por-que a {
+    color: #ffffff;
+    font-weight: bold; }
 
-#quienes-somos .pedimos, #quienes-somos .vigilamos-a, #quienes-somos .metodologias, #quienes-somos .contacto {
+#quienes-somos .hacemos, #quienes-somos .vigilamos-a, #quienes-somos .como-ser {
   background-color: #ffffff;
   color: #000000; }
-  #quienes-somos .pedimos ul, #quienes-somos .vigilamos-a ul, #quienes-somos .metodologias ul, #quienes-somos .contacto ul {
+  #quienes-somos .hacemos ul, #quienes-somos .vigilamos-a ul, #quienes-somos .como-ser ul {
     padding-left: 40px; }
-    #quienes-somos .pedimos ul li, #quienes-somos .vigilamos-a ul li, #quienes-somos .metodologias ul li, #quienes-somos .contacto ul li {
-      padding: 20px 0px 20px 0px; }
+    #quienes-somos .hacemos ul li, #quienes-somos .vigilamos-a ul li, #quienes-somos .como-ser ul li {
+      padding: 5px 0px 5px 0px; }
+  #quienes-somos .hacemos a, #quienes-somos .vigilamos-a a, #quienes-somos .como-ser a {
+    color: #000000;
+    font-weight: bold; }
 
-#quienes-somos .vigilamos, #quienes-somos .datos {
+#quienes-somos .metodologias {
   background-color: rgba(53, 2, 2, 0.05);
   color: #ff6262; }
-  #quienes-somos .vigilamos a, #quienes-somos .datos a {
+  #quienes-somos .metodologias a {
     color: #ff6262;
     font-weight: bold; }
